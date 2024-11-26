@@ -1,0 +1,11 @@
+{
+  "model_type": "llama",
+  "hidden_size": 4096,
+  "num_attention_heads": 32,
+  "num_hidden_layers": 16,
+  "intermediate_size": 11008,
+  "vocab_size": 32000,
+  "bos_token_id": 0,
+  "eos_token_id": 1,
+  "pad_token_id": 2
+}
