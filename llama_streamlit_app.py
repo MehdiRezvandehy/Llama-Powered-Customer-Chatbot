@@ -119,7 +119,8 @@ if 'load_fine_tuned_model' not in st.session_state:
         # Load the tokenizer
         tokenizer = AutoTokenizer.from_pretrained(model_path)
         st.session_state.tokenizer = tokenizer
-        
+
+        @st.cache
         # Load the model
         model_fine_tuned = AutoModelForCausalLM.from_pretrained(model_path)
         st.session_state.model_fine_tuned = model_fine_tuned
